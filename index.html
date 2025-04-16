@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica - Pag1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <!-- Menú de navegación -->
+        <div>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Tecnología</a>
+                <ul class="navbar">
+                    <li><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="pagina2.html">Página 2</a></li>
+                    <li><a class="nav-link" href="pagina3.html">Página 3</a></li>
+                    <li><a class="nav-link" href="pagina4.html">Página 4</a></li>
+                    <li><a class="nav-link" href="pagina5.html">Página 5</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Slider -->
+        <main>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3399a364-9bd7-4302-b0a4-40cd956ba23d_5246x3200.png"
+                        alt="Tecnología 1">
+                </div>
+                <div class="slide">
+                    <img src="https://www.claudemcp.com/images/blog/what-is-mcp.png" alt="Tecnología 2">
+                </div>
+                <div class="slide">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F840e868d-2c83-4b1b-a881-df1da6c6e332_1309x1536.gif"
+                        alt="Tecnología 3">
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Gregorio Omar Ccerhuayo Lima</p>
+        </footer>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Mostrar la primera diapositiva
+        showSlide(currentSlide);
+    </script>
+</body>
+
+</html>
