@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica - Pag4</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .benefits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background-color: #f4f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-card h2 {
+            color: #2b2bff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .benefit-card p {
+            line-height: 1.6;
+        }
+
+        .icon {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #2b2bff;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Tecnología</a>
+                <ul class="navbar">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="pagina2.html">Pagina 2</a></li>
+                    <li><a class="nav-link" href="pagina3.html">Pagina 3</a></li>
+                    <li><a class="nav-link active" href="pagina4.html">Pagina 4</a></li>
+                    <li><a class="nav-link" href="pagina5.html">Pagina 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="content">
+                <h1>Beneficios del MCP (Model Context Protocol)</h1>
+
+                <div class="benefits-container">
+                    <div class="benefit-card">
+                        <div class="icon">📊</div>
+                        <h2>Mayor precisión</h2>
+                        <p>El MCP mejora significativamente la precisión de las respuestas al proporcionar un contexto
+                            más estructurado y detallado. Esto reduce las ambigüedades y permite que el modelo comprenda
+                            mejor las intenciones del usuario.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">⚡</div>
+                        <h2>Eficiencia mejorada</h2>
+                        <p>Al utilizar MCP, se reduce el número de interacciones necesarias para obtener la respuesta
+                            deseada. Las peticiones son más específicas desde el principio, lo que ahorra tiempo y
+                            recursos computacionales.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🔄</div>
+                        <h2>Consistencia</h2>
+                        <p>El formato estandarizado del MCP asegura que las respuestas sean más consistentes a lo largo
+                            del tiempo y entre diferentes modelos, lo que facilita su integración en flujos de trabajo
+                            existentes.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🔍</div>
+                        <h2>Transparencia</h2>
+                        <p>El MCP proporciona una estructura clara que hace que las interacciones con la IA sean más
+                            transparentes y comprensibles, facilitando la identificación de problemas o sesgos en las
+                            respuestas.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Gregorio Omar Ccerhuayo Lima</p>
+        </footer>
+    </div>
+</body>
+
+</html>

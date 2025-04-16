@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica - Pag3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .component-card {
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .component-card h2 {
+            color: #2b2bff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .component-card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .example {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 3px solid #2b2bff;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Tecnología</a>
+                <ul class="navbar">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="pagina2.html">Pagina 2</a></li>
+                    <li><a class="nav-link active" href="pagina3.html">Pagina 3</a></li>
+                    <li><a class="nav-link" href="pagina4.html">Pagina 4</a></li>
+                    <li><a class="nav-link" href="pagina5.html">Pagina 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="content">
+                <h1>Componentes del MCP (Model Context Protocol)</h1>
+
+                <div class="component-card">
+                    <h2>Metadatos</h2>
+                    <p>Los metadatos en MCP proporcionan información sobre el contexto de la conversación, incluyendo
+                        detalles sobre el usuario, el entorno, y otras variables relevantes que ayudan al modelo a
+                        comprender mejor el contexto global.</p>
+                    <div class="example">
+                        Metadata: { usuario: "desarrollador", plataforma: "VSCode", tarea: "debugging" }
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h2>Instrucciones</h2>
+                    <p>Las instrucciones en MCP son directivas claras y específicas que guían al modelo sobre cómo debe
+                        comportarse, qué debe priorizar, o qué enfoque debe adoptar al responder. Estas instrucciones
+                        proporcionan un marco para la respuesta del modelo.</p>
+                    <div class="example">
+                        Instrucción: "Analiza este código y encuentra posibles problemas de rendimiento."
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h2>Contexto</h2>
+                    <p>El contexto en MCP incluye información adicional relevante para la tarea específica, como
+                        documentos de referencia, ejemplos, o conocimientos previos que el modelo debe tener en cuenta
+                        para generar una respuesta informada.</p>
+                    <div class="example">
+                        Contexto: "Estamos trabajando en una aplicación de e-commerce que maneja miles de transacciones
+                        por minuto."
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Gregorio Omar Ccerhuayo Lima</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica - Pag5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .applications {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .application-card {
+            display: flex;
+            flex-direction: row;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-image {
+            flex: 0 0 30%;
+            background-color: #e1e1ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-size: 3em;
+            color: #2b2bff;
+        }
+
+        .app-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .app-content h2 {
+            color: #2b2bff;
+            margin-bottom: 15px;
+        }
+
+        .app-content p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .application-card {
+                flex-direction: column;
+            }
+
+            .app-image {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Tecnología</a>
+                <ul class="navbar">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="pagina2.html">Pagina 2</a></li>
+                    <li><a class="nav-link" href="pagina3.html">Pagina 3</a></li>
+                    <li><a class="nav-link" href="pagina4.html">Pagina 4</a></li>
+                    <li><a class="nav-link active" href="pagina5.html">Pagina 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="content">
+                <h1>Aplicaciones del MCP (Model Context Protocol)</h1>
+
+                <div class="applications">
+                    <div class="application-card">
+                        <div class="app-image">💻</div>
+                        <div class="app-content">
+                            <h2>Desarrollo de software</h2>
+                            <p>El MCP ha revolucionado el desarrollo de software al permitir a los programadores obtener
+                                asistencia más precisa para la escritura de código, depuración y optimización.</p>
+                            <p>Los desarrolladores pueden proporcionar contexto específico sobre su proyecto, las
+                                tecnologías utilizadas y los requisitos particulares, obteniendo sugerencias más
+                                relevantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="application-card">
+                        <div class="app-image">🎓</div>
+                        <div class="app-content">
+                            <h2>Educación</h2>
+                            <p>En el ámbito educativo, el MCP permite crear experiencias de aprendizaje personalizadas
+                                al proporcionar a los modelos información sobre el nivel de conocimiento del estudiante,
+                                sus objetivos de aprendizaje y su estilo preferido.</p>
+                            <p>Esto facilita la generación de material didáctico adaptado a las necesidades específicas
+                                de cada estudiante.</p>
+                        </div>
+                    </div>
+
+                    <div class="application-card">
+                        <div class="app-image">🏥</div>
+                        <div class="app-content">
+                            <h2>Asistencia médica</h2>
+                            <p>El MCP ha demostrado ser valioso en el sector de la salud, donde la precisión es crucial.
+                                Los profesionales médicos pueden proporcionar contexto detallado sobre casos clínicos
+                                para obtener análisis más precisos y útiles.</p>
+                            <p>La estructura del MCP ayuda a mantener la confidencialidad mientras se proporciona la
+                                información relevante necesaria para un análisis adecuado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Gregorio Omar Ccerhuayo Lima</p>
+        </footer>
+    </div>
+</body>
+
+</html>
